@@ -1,10 +1,14 @@
 ---
-title: light oj 1132【矩阵快速幂】/【伯努利数】
-date: 2016-11-29T16:00:00.000Z
+summary: 给定n、k，求自然数的k次幂的和，结果对2^32取模。
+authors:
+  - 阿威
 math: true
+date: 2016-11-29T16:00:00.000Z
 diagram: true
 highlight: true
-summary: 给定n、k，求自然数的k次幂的和，结果对2^32取模。
+title: light oj 1132【矩阵快速幂】/【伯努利数】
+tags:
+  - 矩阵快速幂
 image:
   placement: 3
   caption: ""
