@@ -13,7 +13,7 @@ image:
   placement: 3
   caption: ""
 ---
-题目：http://vjudge.net/problem/LightOJ-1132
+[题目](http://vjudge.net/problem/LightOJ-1132)
 
 做快速幂专题做到的题
 
@@ -26,17 +26,17 @@ image:
 
 由二项式定理，(n+1)^k展开C(k,0)*n^k+C(k,1)*n^(k-1)+...+C(k,k)*n^0，可知(n+1)^k能由
 
-n^k,n^(k-1)...,n^0推出，那么列数为1的矩阵就是$ \begin{pmatrix}n^k\n^{k-1}\n^{k-2}\...\n^0\S(n-1)\end{pmatrix}$  我们就可以构造一个(k+2)*(k+2)的矩阵$\qquad \begin{pmatrix}C(k,0)&C(k,1)&...&C(k,k)&0 \0&C(k-1,0)&...&C(k-1,k-1)&0\0&0&C(k-2,0)&C(k-2,k-2)&0\.&.&.&.&.\.&.&.&.&.\.&.&.&.&.\0&0&...&C(0,0)&0\C(k,0)&C(k,1)&...&C(k,k)&0\end{pmatrix}$, 组合数可以打表预处理。
+n^k,n^(k-1)...,n^0推出，那么列数为1的矩阵就是$ \begin{pmatrix}n^k\n^{k-1}\n^{k-2}...\n^0\S(n-1)\end{pmatrix}$  我们就可以构造一个(k+2)*(k+2)的矩阵$\qquad \begin{pmatrix}C(k,0)&C(k,1)&...&C(k,k)&0 \0&C(k-1,0)&...&C(k-1,k-1)&0\0&0&C(k-2,0)&C(k-2,k-2)&0.&.&.&.&..&.&.&.&..&.&.&.&.\0&0&...&C(0,0)&0\C(k,0)&C(k,1)&...&C(k,k)&0\end{pmatrix}$, 组合数可以打表预处理。
 
  ~~第二种~~
 
-//前置技能：伯努利数(https://zh.wikipedia.org/wiki/%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%95%B0)**\***逆元不可求 //待证
+//前置技能：[伯努利数](https://zh.wikipedia.org/wiki/%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%95%B0)**\***逆元不可求 //待证
 
-// $B*0=1,且C*{n+1}^0*B0+C{n+1}^1*B*1+...C*{n+1}^n*B_n=0$;
+// $ B*0=1,且C*{n+1}^0*B0+C{n+1}^1*B*1+...C*{n+1}^n*B_n=0$;
 
-//那么，$B*n=\frac{-1}{n+1}*\sum*{i=0}^{n-1}C_{n+1}^i*B_i\qquad$
+//那么，$ B*n=\frac{-1}{n+1}*\sum*{i=0}^{n-1}C_{n+1}^i*B_i\qquad$
 
-//$S(n)=\frac{1}{k+1}*\sum{i=1}^{k+1}C{k+1}^i*B_{k+1-i}*(n+1)^i$
+//$ S(n)=\frac{1}{k+1}*\sum{i=1}^{k+1}C{k+1}^i*B_{k+1-i}*(n+1)^i$
 
 //可以预处理逆元
 
